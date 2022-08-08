@@ -29,8 +29,7 @@ install:
     - npm install --no-progress --no-audit --no-fund --verbose
   only:
     - merge_requests
-    - develop
-    - main
+    - master
 # Runs the test suite.
 test:
   stage: verify
@@ -42,8 +41,7 @@ test:
     - node test.js
   only:
     - merge_requests
-    - develop
-    - main
+    - master
 # Publishes the package to npm.
 publish:
   stage: publish
@@ -55,3 +53,11 @@ publish:
     - npm config set -- '//registry.npmjs.org/:_authToken' "${NPM_AUTH_TOKEN}"
     - npm publish --verbose
   resource_group: 'deployment-$CI_COMMIT_REF_SLUG'
+  rules:
+    - if: '$CI_DEPLOY_FREEZE != null'
+      when: never
+    - if: '$CI_COMMIT_REF_NAME != "master"'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: never
+    - when: on_success
