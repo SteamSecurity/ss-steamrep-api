@@ -1,0 +1,8 @@
+/node_modules/
+*.code-workspace
+
+.gitignore
+.gitlab-ci.yml
+/images/
+test.js
+test_min.js
