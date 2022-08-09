@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://gitlab.com/ArmoredDragon/ss-steamrep-api/-/raw/master/images/steamrep-logo.png" width="750"><br>
+  <img src="https://gitlab.com/steamsecurity/SS-SteamRep-API/-/raw/master/images/steamrep-logo.png" width="750"><br>
   <b>An API Wrapper</b>
 </div>
 <br>
