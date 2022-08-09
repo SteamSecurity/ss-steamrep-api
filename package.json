@@ -4,7 +4,7 @@
 	},
 	"name": "ss-steamrep-api",
 	"description": "SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by SteamSecurity.org.",
-	"version": "0.9.2",
+	"version": "0.9.3",
 	"main": "index.js",
 	"devDependencies": {},
 	"scripts": {

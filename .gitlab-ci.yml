@@ -30,18 +30,6 @@ install:
   only:
     - merge_requests
     - master
-# Runs the test suite.
-test:
-  stage: verify
-  interruptible: true
-  retry: 1
-  dependencies:
-    - install
-  script:
-    - node test.js
-  only:
-    - merge_requests
-    - master
 # Publishes the package to npm.
 publish:
   stage: publish

@@ -1,12 +1,12 @@
 <div align="center">
   <img src="https://gitlab.com/steamsecurity/SS-SteamRep-API/-/raw/master/images/steamrep-logo.png" width="750"><br>
-  <b>An API Wrapper</b>
+  <b>A community made API Wrapper</b>
 </div>
 <br>
 <div align="center">
   <img src="https://img.shields.io/npm/dt/ss-steamrep-api?style=for-the-badge">
-  <img src="https://img.shields.io/gitlab/contributors/ss-steamrep-api?style=for-the-badge">
-  <img src="https://img.shields.io/gitlab/issues/open-raw/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/gitlab/contributors/steamsecurity/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/gitlab/issues/open-raw/steamsecurity/ss-steamrep-api?style=for-the-badge">
 </div>
 <br>
 
