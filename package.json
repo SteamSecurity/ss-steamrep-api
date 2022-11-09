@@ -1,32 +1,33 @@
 {
-	"dependencies": {
-		"axios": "^0.27.2"
-	},
-	"name": "ss-steamrep-api",
-	"description": "SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by SteamSecurity.org.",
-	"version": "0.9.3",
-	"main": "index.js",
-	"devDependencies": {},
-	"scripts": {
-		"test": "node test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://gitlab.com/steamsecurity/SS-SteamRep-API.git"
-	},
-	"keywords": [
-		"api",
-		"steam",
-		"trading",
-		"reputation",
-		"wrapper",
-		"nodejs",
-		"javascript"
-	],
-	"author": "SteamSecurity.org",
-	"license": "GPL-3.0",
-	"bugs": {
-		"url": "https://gitlab.com/steamsecurity/SS-SteamRep-API/issues"
-	},
-	"homepage": "https://gitlab.com/steamsecurity/SS-SteamRep-API#readme"
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "name": "ss-steamrep-api",
+  "description": "SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by SteamSecurity.org.",
+  "version": "0.10.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test",
+    "testmin": "node test_min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/steamsecurity/SS-SteamRep-API.git"
+  },
+  "keywords": [
+    "api",
+    "steam",
+    "trading",
+    "reputation",
+    "wrapper",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "SteamSecurity.org",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/steamsecurity/SS-SteamRep-API/issues"
+  },
+  "homepage": "https://gitlab.com/steamsecurity/SS-SteamRep-API#readme"
 }

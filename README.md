@@ -12,7 +12,7 @@
 
 # About
 
-SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by SteamSecurity.org.
+SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by [SteamSecurity.org](https://steamsecurity.org).
 Please see [Limitations](#limitations) for further details.
 
 ### Installation
@@ -22,27 +22,24 @@ Please see [Limitations](#limitations) for further details.
 # Basic usage
 
 ```js
-let steamrep = require('ss-steamrep-api');
+// There are two ways to include this module in your project
+// The first way is on a single line
+const SteamRep = new (require('ss-steamrep-api'))();
 
-// Optionally set a timeout to the SteamRep API request.
-steamrep.timeout = 5000; // ms to wait for a response. Default is '5000'
+// Alternatively you can do it like this.
+const _steamrep = require('ss-steamrep-api');
+const SteamRep = new _steamrep();
 
-// Optionally set request cache.
-steamrep.cache_results = true; // Should results be cached? Default is 'true'.
+// If you would like to change the default options, you can supply them in an Object like this:
+// const SteamRep = new (require('ss-steamrep-api'))({ timeout: 2500, cache: false });
 
-// Optionally set a cache time to save requests to prevent spamming of SteamRep servers.
-steamrep.cache_time = 1800000; // ms to save a cached response.  Default is '1800000' (30 minutes)
-
-async function getAccountReputation() {
-	await steamrep.getReputation('insert-valid-STEAMID64-here').then(console.log);
-}
-
-getAccountReputation();
+// Get the SteamRep reputation of any steam user by SteamID64
+await steamrep.getReputation('STEAMID64').then(console.log);
 ```
 
 See test.js or test_min.js for more examples.
 
-# Properties
+# Options
 
 - ### timeout
 
@@ -80,11 +77,11 @@ See test.js or test_min.js for more examples.
 
 # Error Handling
 
-Any errors with the SteamRep api or this wrapper should resolve the promise with both an 'error' and 'error_message' value.
+Any errors with the SteamRep api or this wrapper should reject a request with both an 'error' and 'error_message' value.
 
 ```js
 {
-	error: 'Status code. Almost always a direct HTTP status code from a request',
+	error: 'Status code. Often a direct HTTP status code, otherwise most likely "1"',
 	error_message: 'A more specific error message',
 }
 ```
@@ -97,5 +94,5 @@ We will be producing and maintaining a Valve API wrapper for this information. T
 # Disclaimer
 
 This repository is not affiliated with SteamRep. This repository is provided as is. See the included LICENSE file for more information.
-In accordance with the requests from SteamRep staff, it is advised that you cache your results. This package will automatically cache your requests and responses for the recommended 30 minutes.
-For more information view the SteamRep forum. [SteamRep forum](https://forums.steamrep.com/threads/steamrep-web-api-beta4-legacy-public.114688/)
+<br>In accordance with the requests from SteamRep staff, it is advised that you cache your results.<br>**This package will automatically cache your requests and responses for the recommended 30 minutes.**
+For more information view the [SteamRep forum](https://forums.steamrep.com/threads/steamrep-web-api-beta4-legacy-public.114688/).
