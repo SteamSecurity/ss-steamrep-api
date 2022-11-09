@@ -1,6 +1,6 @@
 // The following SteamID64s are provided as examples.
 // Please do not find and contact the accounts associated with any of the following SteamID64s.
-const steamrep = require('./index');
+const steamrep = new (require('./index'))({ debug: true });
 
 async function runTest() {
 	await steamrep.getReputation('76561198179000678').then(console.log); // BackpackTF banned example
