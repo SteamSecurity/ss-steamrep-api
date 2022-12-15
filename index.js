@@ -151,7 +151,14 @@ class SteamRepAPI {
 				.get(url, { timeout: this.timeout })
 				.then(resolve)
 				.catch((reason) => {
-					resolve({ error: reason.response.status, error_message: reason.message });
+					this._debugLog({ data: 'HTTP request failure' });
+					this._debugLog({ data: reason, title: 'Full log' });
+
+					if (reason.response) {
+						this._debugLog({ data: reason.response, title: 'Response' });
+						return resolve({ error: reason.response.status, error_message: reason.message });
+					}
+					return resolve({ error: '1', error_message: 'HTTP request failure' });
 				});
 		});
 	}

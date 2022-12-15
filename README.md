@@ -1,12 +1,14 @@
 <div align="center">
-  <img src="https://gitlab.com/steamsecurity/SS-SteamRep-API/-/raw/master/images/steamrep-logo.png" width="750"><br>
+  <img src="https://raw.githubusercontent.com/SteamSecurity/ss-steamrep-api/master/images/steamrep-logo.png" width="750"><br>
   <b>A community made API Wrapper</b>
 </div>
 <br>
 <div align="center">
   <img src="https://img.shields.io/npm/dt/ss-steamrep-api?style=for-the-badge">
-  <img src="https://img.shields.io/gitlab/contributors/steamsecurity/ss-steamrep-api?style=for-the-badge">
-  <img src="https://img.shields.io/gitlab/issues/open-raw/steamsecurity/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/github/contributors/steamsecurity/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/steamsecurity/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/github/languages/code-size/steamsecurity/ss-steamrep-api?style=for-the-badge">
+  <img src="https://img.shields.io/github/workflow/status/steamsecurity/ss-steamrep-api/NPM%20Publish?style=for-the-badge">
 </div>
 <br>
 
@@ -89,7 +91,7 @@ Any errors with the SteamRep api or this wrapper should reject a request with bo
 # Limitations
 
 SS-SteamRep-API does not return bans relating to Steam. This means that a user with a VAC ban or a Steam Trading ban will appear as if they are completely clean. Valve specific bans are outside of the scope of this package.
-We will be producing and maintaining a Valve API wrapper for this information. This README file will be updated with a link to that repository once it is created and released.
+You may visit [our SteamAPI wrapper](https://github.com/SteamSecurity/ss-steam-api) to get this information.
 
 # Disclaimer
 
