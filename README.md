@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/contributors/steamsecurity/ss-steamrep-api?style=for-the-badge">
   <img src="https://img.shields.io/github/issues/steamsecurity/ss-steamrep-api?style=for-the-badge">
   <img src="https://img.shields.io/github/languages/code-size/steamsecurity/ss-steamrep-api?style=for-the-badge">
-  <img src="https://img.shields.io/github/workflow/status/steamsecurity/ss-steamrep-api/NPM%20Publish?style=for-the-badge">
+  <img src="https://img.shields.io/github/actions/workflow/status/steamsecurity/ss-steamrep-api/npm-publish.yml?branch=master&style=for-the-badge">
 </div>
 <br>
 

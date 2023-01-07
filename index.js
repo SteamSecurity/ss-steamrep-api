@@ -49,7 +49,7 @@ class SteamRepAPI {
 			}
 
 			// Set the unconfirmed reports value
-			profile_reputation.reports = steamrep_response.data.steamrep.stats.unconfirmedreports.reportcount;
+			profile_reputation.reports = Number(steamrep_response.data.steamrep.stats.unconfirmedreports.reportcount);
 
 			this._debugLog({ data: profile_reputation, title: 'Data to send out' });
 
