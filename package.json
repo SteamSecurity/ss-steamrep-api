@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.6.0"
   },
   "name": "ss-steamrep-api",
   "description": "SS-SteamRep-API is a basic wrapper for the SteamRep API used and maintained by SteamSecurity.org.",
